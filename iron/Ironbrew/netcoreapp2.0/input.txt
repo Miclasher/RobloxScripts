@@ -1,1 +1,1 @@
-print("Lua Obfuscator by Pyan")
+game.Players.LocalPlayer:Kick("You're banned for exploiting")
