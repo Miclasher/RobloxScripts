@@ -1,0 +1,35 @@
+/* Selector {
+    Properity: Value;
+} */
+
+body {
+    background-image: url(background.webp);
+    background-size: cover;
+    background-blend-mode:multiply;
+}
+h1 {
+    color: cyan; 
+    text-align: center;
+    border: 5px inset purple ;
+}
+li {
+    display: block ;
+}
+.box {
+    border: 5px solid rgba(52,73,211,1);
+    display: inline-block;
+    padding: 5px 30px 5px 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+}
+img {
+    float: right;
+}
+footer {
+    clear: both;
+    font-size: 130%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 20px ;
+}
