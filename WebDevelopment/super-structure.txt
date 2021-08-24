@@ -1,0 +1,102 @@
+  <nav class="zone green sticky">
+    <ul class="main-nav">
+      <li><a href="">About</a></li>
+      <li><a href="">Products</a></li>
+      <li><a href="">Our Team</a></li>
+      <li class="push"><a href="">Contacts</a></li>
+    </ul>
+  </nav>
+  <div class="container zone"><img class="cover" src="img/undraw.png"></div>
+  <div class="grid-wrapper zone blue">
+    <div class="box zone"><img src="./img/files_2.png"></div>
+    <div class="box zone"><img src="./img/server_2_2.png"></div>
+    <div class="box zone"><img src="./img/monitor_settings_2.png"></div>
+    <div class="box zone"><img src="./img/server_3.png"></div>
+    <div class="box zone"><img src="./img/data_storage_2_2.png"></div>
+    <div class="box zone"><img src="./img/monitor_coding_2.png"></div>
+    <div class="box zone"><img src="./img/desktop_analytics_2.png"></div>
+    <div class="box zone"><img src="./img/server_safe_2.png"></div>
+  </div>
+  <footer class="zone yellow">Мне пора(((((</footer>
+  -------------------------------------------------------------------------------------------------------------------------------------
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*NAV*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.zone {
+    cursor:pointer;
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0;
+}
+@media screen and (max-width:600px){
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+.push {
+    margin-left: auto;
+}
+
+li {
+    padding: 10px;
+}
+
+a{
+    text-decoration:none;
+    color: whitesmoke;
+}
+
+
+/*COVER*/
+
+.container {
+    display: flex;
+    justify-content: center ;
+    align-content: center ;
+    height: 50vh;
+}
+
+.cover {
+    width: 30rem;
+}
+
+/*PROJECT GRID*/
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box > img {
+    width: 100%;
+}
+
+.box {
+    background-color: #444;
+    padding: 100px;
+    margin: 20px;
+}
+.box:hover {
+    transform: rotate(-7deg);
+}
+/*FOOTER*/
+footer {
+    text-align: center;
+}
